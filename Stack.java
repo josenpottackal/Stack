@@ -2,8 +2,8 @@
 /**
 * File Name: Stack.java
 * Purpose: Implements the stack data type with arrays
-* Date: 2020-03-01
-* Last modified: 2020-03-01
+* Date: 2020-03-25
+* Last modified: 2020-03-25
 * Author: Josen Pottackal
 * Copy right no copyright
 * Version: 1.0
