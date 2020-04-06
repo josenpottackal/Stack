@@ -18,17 +18,17 @@ public class Stack {
     
 /* Checks if Stack is empty             */
 /* @return top of Stack if it equals -1 */
-/* No side-effects 						*/
-/* Referentially transparent 		    */
+/* No side-effects 			*/
+/* Referentially transparent 		*/
 
     public static boolean isEmpty () {
         return topOfStack == -1;
     }
  
-/* Checks if Stack is full              	   */
+/* Checks if Stack is full                     */
 /* @return topOfStack if it equals stackSize-1 */
-/* No side-effects 						       */
-/* Referentially transparent 		           */
+/* No side-effects 			       */
+/* Referentially transparent 		       */
 
     public static boolean isFull () {
         return topOfStack == stackSize - 1;
@@ -36,17 +36,17 @@ public class Stack {
     
 /* Checks if Stack is error free and empty           */
 /* Side-effects - changes global variable topOfStack */
-/* Not referentially transparent 		             */
+/* Not referentially transparent 		     */
 
     public static void empty () {
         errorFree = true;
         topOfStack = -1;
     }
 
-/* Looks what is on top           	   				 */
+/* Looks what is on top           	   	     */
 /* @return adds topOfStack to array stack or value 0 */
-/* No side-effects 						       		 */
-/* Not Referentially transparent 		             */
+/* No side-effects 				     */
+/* Not Referentially transparent 		     */
     
     public static int top () {
 		errorFree = ! (isEmpty ()) & errorFree;
@@ -57,10 +57,10 @@ public class Stack {
 		} 
 	}
 
-/* Put something on top           	   				 */
-/* @param integer Value								 */
+/* Put something on top           	             */
+/* @param integer Value				     */
 /* Side-effects - changes global variable topOfStack */
-/* Not Referentially transparent 		             */
+/* Not Referentially transparent 		     */
 
     public static void push (int value) {
 		errorFree = ! (isFull ()) & errorFree;
@@ -70,9 +70,9 @@ public class Stack {
 		} 
     }
     
-/* Take the top item away           	   			 */
+/* Take the top item away           	             */
 /* Side-effects - changes global variable topOfStack */
-/* Not Referentially transparent 		             */
+/* Not Referentially transparent 		     */
 
     public static void pop () {
 		errorFree = ! (isEmpty ()) & errorFree;
